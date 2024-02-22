@@ -17,5 +17,17 @@
             android:id="@+id/action_homeFragment_to_mvvmFragment"
             app:destination="@id/mvvmFragment" />
     </fragment>
-    <!-- Define MVPFragment and MVVMFragment here -->
+
+    <fragment
+        android:id="@+id/mvpFragment"
+        android:name="com.cs4520.assignment3.MVPFragment"
+        android:label="MVP Fragment"
+        tools:layout="@layout/fragment_mvp" />
+
+    <fragment
+        android:id="@+id/mvvmFragment"
+        android:name="com.cs4520.assignment3.MVVMFragment"
+        android:label="MVVM Fragment"
+        tools:layout="@layout/fragment_mvvm" />
+
 </navigation>
