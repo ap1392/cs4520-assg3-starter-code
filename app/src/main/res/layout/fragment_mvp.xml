@@ -1,12 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#c4b8e1"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <EditText
+        android:id="@+id/numberInput1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Enter number 1"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/numberInput2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Enter number 2"
+        android:layout_marginBottom="16dp"/>
 
     <TextView
-        android:id="@+id/textViewMvp"
-        android:layout_width="wrap_content"
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MVP Fragment"
-        android:layout_gravity="center" />
-</FrameLayout>
+        android:text="Result"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/subtractButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subtract"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/multiplyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiply"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/divideButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Divide"/>
+
+</LinearLayout>
