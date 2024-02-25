@@ -24,7 +24,8 @@ class Presenter(private val view: MVPFragment) : CalculatorPresenter {
 }
 
 
-// Original code, thought I could trim it down w a switch statemnt
+// Original code, thought I could trim it down w a switch statement.
+// Keeping just in case this fails
 
 //interface CalculatorPresenter {
 //    fun add(a: String, b: String)
