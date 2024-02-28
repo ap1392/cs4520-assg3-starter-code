@@ -39,8 +39,4 @@ class MVVMFragment : Fragment() {
         binding.divideButton.setOnClickListener { viewModel.performOperation("divide", binding.numberInput1.text.toString(), binding.numberInput2.text.toString()) }
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
 }

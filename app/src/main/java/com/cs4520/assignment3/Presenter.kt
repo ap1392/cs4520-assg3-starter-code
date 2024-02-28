@@ -1,10 +1,6 @@
 package com.cs4520.assignment3
 
-interface CalculatorPresenter {
-    fun performOperation(operation: String, a: String, b: String)
-}
-
-class Presenter(private val view: MVPFragment) : CalculatorPresenter {
+class Presenter(private val view: ViewInterface) : CalculatorPresenter {
     private val model = Model()
 
     override fun performOperation(operation: String, a: String, b: String) {

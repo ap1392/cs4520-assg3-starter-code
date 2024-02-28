@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.cs4520.assignment3.databinding.FragmentMvpBinding
 
-class MVPFragment : Fragment() {
+class MVPFragment : Fragment(), ViewInterface {
     private var _binding: FragmentMvpBinding? = null
     private val binding get() = _binding!!
     private val presenter = Presenter(this)
@@ -32,11 +32,11 @@ class MVPFragment : Fragment() {
         _binding = null
     }
 
-    fun showResult(result: String) {
+    override fun showResult(result: String) {
         binding.resultTextView.text = result
     }
 
-    fun showError(errorMessage: String) {
+    override fun showError(errorMessage: String) {
         Toast.makeText(context, errorMessage, Toast.LENGTH_SHORT).show()
         binding.numberInput1.text.clear()
         binding.numberInput2.text.clear()
